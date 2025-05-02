@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Failing Up</title>
+    <style>
+        /* CSS for radio buttons */
+        input[type="radio"] {
+            transform: scale(1.5);
+            font-weight: bold;
+        }
+
+        /* General image styling */
+        img {
+            width: 300px;
+            height: auto;
+            border: 5px solid green;
+            padding: 10px;
+            box-shadow: 0 0 10px green;
+        }
+
+        /* Styling for the first two images */
+        img:first-of-type,
+        img:nth-of-type(2) {
+            width: 500px;
+        }
+
+        /* Background styling for the body */
+        body {
+            background-image: url('images/flowers.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        /* About Me section styling */
+        .about-me {
+            position: absolute;
+            top: 50%;
+            right: 10%;
+            transform: translateY(-50%);
+            text-align: right;
+            max-width: 300px;
+        }
+
+        .about-me h2 {
+            color: darkblue;
+            text-shadow: 1px 1px 2px gray;
+        }
+
+        .about-me p {
+            font-size: large;
+            color: navy;
+            background-color: lightyellow;
+            padding: 10px;
+            border-radius: 5px;
+            line-height: 1.5;
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: small;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Failing Up</h1>
+    <p style="font-size: xx-large; font-weight: bold; color: hotpink; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; background-color: lightblue;">
+        Here are some pictures I love.
+    </p>
+    <form>
+        <p style="text-decoration: underline;">Choose your favorite type of pet:</p>
+        <label>
+            <input type="radio" name="pet" value="dogs"> Dogs
+        </label>
+        <label>
+            <input type="radio" name="pet" value="big dogs"> Big Dogs
+        </label>
+        <label>
+            <input type="radio" name="pet" value="little dogs"> Little Dogs
+        </label>
+    </form>
+    </form>
+
+    <!-- Image gallery -->
+    <img src="images/1000001681.jpg" alt="A beautiful landscape">
+    <img src="images/1000001684.jpg" alt="Another scenic view">
+    
+
+    <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+        <h1>I also just really like these other pictures.</h1>
+    </div>
+
+    <!-- Additional images -->
+    
+    <img src="images/roses in holder.jpg" alt="Roses in a holder">
+    <img src="images/tiger.jpg" alt="A tiger" style="background-color: lightblue;">
+
+    <!-- About Me section -->
+    <div class="about-me">
+        <h2>About Me</h2>
+        <p>
+            Hi, I'm a sole parent living in Cedar City, Utah. I love spending time with my kids and dogs, enjoy music,
+            and fancy myself quite the chef. This page is a little glimpse into my world.
+        </p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 Failing Up. All rights reserved.
+    </footer>
+</body>
+</html>
